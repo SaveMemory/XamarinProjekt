@@ -13,6 +13,9 @@
         <Button Text="Click me" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand"/>
+        <Button Text="Click me" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
     </StackLayout>
 
 </ContentPage>
