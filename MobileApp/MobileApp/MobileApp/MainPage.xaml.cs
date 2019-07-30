@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,9 +14,12 @@ namespace MobileApp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public Stock db = new Stock();
+        public Stock Note;
         public MainPage()
         {
             InitializeComponent();
+            Note = db.GetFirstNote();
         }
     }
 }

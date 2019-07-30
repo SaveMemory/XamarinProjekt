@@ -7,15 +7,13 @@
              x:Class="MobileApp.MainPage">
 
     <StackLayout>
-        <Label Text="Pocket notes" 
+        <Label Text="{Binding Note.Content}" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         <Button Text="Click me" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand"/>
-        <Button Text="Click me" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand"/>
+        
     </StackLayout>
 
 </ContentPage>
