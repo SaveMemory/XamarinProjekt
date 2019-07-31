@@ -6,11 +6,23 @@ namespace MobileApp
 {
     public partial class App : Application
     {
+        static DataAccess dbUtils;
         public App()
         {
             InitializeComponent();
 
             MainPage = new MainPage();
+        }
+        public static DataAccess DAUtil
+        {
+            get
+            {
+                if (dbUtils == null)
+                {
+                    dbUtils = new DataAccess();
+                }
+                return dbUtils;
+            }
         }
 
         protected override void OnStart()

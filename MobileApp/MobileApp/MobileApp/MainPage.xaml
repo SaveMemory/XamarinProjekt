@@ -7,7 +7,7 @@
              x:Class="MobileApp.MainPage">
 
     <StackLayout>
-        <Label Text="{Binding Note.Content}" 
+        <Label Text="xd" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         <Button Text="Click me" 
