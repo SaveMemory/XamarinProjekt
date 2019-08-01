@@ -7,13 +7,40 @@
              x:Class="MobileApp.MainPage">
 
     <StackLayout>
-        <Label Text="xd" 
+        <Button Text="Add mock note" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-        <Button Text="Click me" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand"/>
-        
+           VerticalOptions="CenterAndExpand"
+           Clicked="AddMockedNote"/>
+        <Button Text="Get all notes" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="GetAllNotes"/>
+        <ListView 
+            IsVisible= "True" 
+            ItemsSource="{Binding Notes}"
+            HasUnevenRows="true"
+            IsPullToRefreshEnabled="true"
+            IsRefreshing="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Margin="20,20,20,20" Spacing="10">
+                            <Label Text="{Binding Title}"
+                                   FontSize="Large"
+                                   VerticalOptions="End"
+                                   HorizontalOptions="Center" 
+                                   TextColor="Gray"></Label>
+                            <Label Text="{Binding Content}"
+                                   FontSize="Small"
+                                   VerticalOptions="End"
+                                   HorizontalOptions="Center"
+                                   TextColor="Gray"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </StackLayout>
 
 </ContentPage>

@@ -3,25 +3,41 @@ using Xamarin.Forms;
 using SQLiteEx.Droid;
 using System.IO;
 using MobileApp;
+using SQLite;
 
-[assembly: Dependency(typeof(SqliteService))]
 namespace SQLiteEx.Droid
 {
-    public class SqliteService : ISQLite
+    public class SqliteService 
     {
         public SqliteService() { }
 
-        public SQLite.Net.SQLiteConnection GetConnection()
+        public void AccessData()
         {
-            var sqliteFilename = "SQLiteEx.db3";
-            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
-            var path = Path.Combine(documentsPath, sqliteFilename);
-            Console.WriteLine(path);
-            if (!File.Exists(path)) File.Create(path);
-            var plat = new SQLite.Net.Platform.XamarinAndroid.SQLitePlatformAndroid();
-            var conn = new SQLite.Net.SQLiteConnection(plat, path);
-            // Return the database connection 
-            return conn;
+            Console.WriteLine("Creating database, if it doesn't already exist");
+            string dbPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.Personal),
+                "ormdemo.db3");
+            var db = new SQLiteConnection(dbPath);
+            db.CreateTable<Note>();
+            if (db.Table<Note>().Count() == 0)
+            {
+                // only insert the data if it doesn't already exist
+                var newStock = new Note();
+                newStock.Content = "AAPL";
+                db.Insert(newStock);
+                newStock = new Note();
+                newStock.Content = "GOOG";
+                db.Insert(newStock);
+                newStock = new Note();
+                newStock.Content = "MSFT";
+                db.Insert(newStock);
+            }
+            Console.WriteLine("Reading data");
+            var table = db.Table<Note>();
+            foreach (var s in table)
+            {
+                Console.WriteLine(s.Id + " " + s.Content);
+            }
         }
     }
 }
