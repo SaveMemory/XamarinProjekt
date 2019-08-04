@@ -15,32 +15,14 @@
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"
                 Clicked="GetAllNotes"/>
-        <ListView 
-            IsVisible= "True" 
-            ItemsSource="{Binding Notes}"
-            HasUnevenRows="true"
-            IsPullToRefreshEnabled="true"
-            IsRefreshing="True">
+        <ListView x:Name="NotesView"
+                  ItemsSource="{Binding Notes}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Vertical" Margin="20,20,20,20" Spacing="10">
-                            <Label Text="{Binding Title}"
-                                   FontSize="Large"
-                                   VerticalOptions="End"
-                                   HorizontalOptions="Center" 
-                                   TextColor="Gray"></Label>
-                            <Label Text="{Binding Content}"
-                                   FontSize="Small"
-                                   VerticalOptions="End"
-                                   HorizontalOptions="Center"
-                                   TextColor="Gray"></Label>
-                        </StackLayout>
-                    </ViewCell>
+                    <TextCell Text="{Binding Title}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
     </StackLayout>
 
 </ContentPage>

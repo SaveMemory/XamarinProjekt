@@ -25,16 +25,28 @@ namespace MobileApp
             newNote.Content = note.Content;
 
             db.Insert(newNote);
-            var table = db.Table<Note>();
         }
         public IEnumerable<Note> GetAllNotes()
         {
-            var allNotes = db.Table<Note>();
+            var notesList = new List<Note>();
+            var allNotes = db.Query<Note>("SELECT * FROM Notes");
 
             foreach (var note in allNotes)
             {
-                 yield return note;
+                notesList.Add(note);
             }
+
+            return notesList;
+        }
+
+        public void UpdateNote(Note note)
+        {
+            db.Query<Note>($"UPDATE Notes SET Title = {note.Title}, Content = {note.Content} WHERE Id == {note.Id}");
+        }
+
+        public void DeleteNote(int id)
+        {
+            db.Query<Note>($"DELETE FROM Notes WHERE Id == {id}");
         }
     }
 }

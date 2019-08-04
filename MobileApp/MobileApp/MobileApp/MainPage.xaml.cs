@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using Xamarin.Forms;
 
@@ -10,29 +10,34 @@ namespace MobileApp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        public IEnumerable<Note> Notes = new List<Note>();
+        ObservableCollection<Note> notesDisplayCollection = new ObservableCollection<Note>();
+        public ObservableCollection<Note> Notes => notesDisplayCollection;
+        private DataAccess DataAccessObject;
+
         public MainPage()
         {
             InitializeComponent();
+            NotesView.ItemsSource = Notes;
+            DataAccessObject = new DataAccess();
         }
 
         public void AddMockedNote(object sender, EventArgs args)
         {
-            var dataAccessObject = new DataAccess();
             var note = new Note()
             {
                 Title = "Test Note",
                 Content = "Test Content"
             };
-            dataAccessObject.AddNote(note);
+            DataAccessObject.AddNote(note);
         }
 
         public void GetAllNotes(object sender, EventArgs args)
         {
-            var dataAccessObject = new DataAccess();
-            var notes = dataAccessObject.GetAllNotes();
-
-            Notes = notes;
+            var notes = DataAccessObject.GetAllNotes();
+            foreach (var note in notes)
+            {
+                notesDisplayCollection.Add(new Note() {Id = note.Id, Title = note.Title, Content = note.Content});
+            }
         }
-    }   
+    }
 }
