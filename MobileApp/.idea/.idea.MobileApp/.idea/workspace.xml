@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f875e2bf-04a2-4654-aeec-1e223a6109c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileApp/MobileApp.Android/SqliteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MobileApp/MobileApp.Android/SqliteService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileApp/MobileApp/DataAccess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MobileApp/MobileApp/DataAccess.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileApp/MobileApp/MobileApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MobileApp/MobileApp/MobileApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileApp/MobileApp/Note.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MobileApp/MobileApp/NoteViewModel.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MobileApp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <marker date="1565544401820" expanded="true" signature="40:1182" ph="&lt;&lt;StackLayout&gt;&#10;        &lt;Button Text=&quot;Add mock noteViewModel&quot; &#10;           HorizontalOptions=&quot;Center&quot;&#10;           VerticalOptions=&quot;CenterAndExpand&quot;&#10;           Clicked=&quot;AddMockedNote&quot;/&gt;&#10;        &lt;Button Text=&quot;Get all noteViewModels&quot; &#10;                HorizontalOptions=&quot;Center&quot;&#10;                VerticalOptions=&quot;CenterAndExpand&quot;&#10;                Clicked=&quot;GetAllNotes&quot;/&gt;&#10;        &lt;ListView x:Name=&quot;NotesView&quot;&#10;                  ItemsSource=&quot;{Binding Notes}&quot; ItemSelected=&quot;ItemSelected&quot;&gt;&#10;            &lt;ListView.ItemTemplate&gt;&#10;                &lt;DataTemplate&gt;&#10;                  &lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;&#10;                &lt;/DataTemplate&gt;&#10;            &lt;/ListView.ItemTemplate&gt;&#10;        &lt;/ListView&gt;&#10;    &lt;/StackLayout&gt;.../&gt;" />
+                <marker date="1565544401820" expanded="true" signature="397:1166" ph="&lt;&lt;Button Text=&quot;Add mock noteViewModel&quot; &#10;           HorizontalOptions=&quot;Center&quot;&#10;           VerticalOptions=&quot;CenterAndExpand&quot;&#10;           Clicked=&quot;AddMockedNote&quot;/&gt; &lt;Button Text=&quot;Get all noteViewModels&quot; &#10;                HorizontalOptions=&quot;Center&quot;&#10;                VerticalOptions=&quot;CenterAndExpand&quot;&#10;                Clicked=&quot;GetAllNotes&quot;/&gt; &lt;ListView x:Name=&quot;NotesView&quot;&#10;                  ItemsSource=&quot;{Binding Notes}&quot; ItemSelected=&quot;ItemSelected&quot;&gt;&#10;            &lt;ListView.ItemTemplate&gt;&#10;                &lt;DataTemplate&gt;&#10;                  &lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;&#10;                &lt;/DataTemplate&gt;&#10;            &lt;/ListView.ItemTemplate&gt;&#10;        &lt;/ListView&gt;.../&gt;" />
+                <marker date="1565544401820" expanded="true" signature="419:577" ph="&lt;.../&gt;" />
+                <marker date="1565544401820" expanded="true" signature="586:757" ph="&lt;.../&gt;" />
+                <marker date="1565544401820" expanded="true" signature="766:1147" ph="&lt;&lt;ListView.ItemTemplate&gt;&#10;                &lt;DataTemplate&gt;&#10;                  &lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;&#10;                &lt;/DataTemplate&gt;&#10;            &lt;/ListView.ItemTemplate&gt;.../&gt;" />
+                <marker date="1565544401820" expanded="true" signature="884:1127" ph="&lt;&lt;DataTemplate&gt;&#10;                  &lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;&#10;                &lt;/DataTemplate&gt;.../&gt;" />
+                <marker date="1565544401820" expanded="true" signature="924:1090" ph="&lt;&lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;.../&gt;" />
+                <marker date="1565544401820" expanded="true" signature="957:1058" ph="&lt;&lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <marker date="1565544395027" expanded="true" signature="6:127" ph="..." />
+                <marker date="1565544395027" expanded="true" signature="148:1762" ph="{...}" />
+                <marker date="1565544395027" expanded="true" signature="155:289" ph="/* Learn more about making custom code visible in the Xamarin.Forms previewer ... */" />
+                <marker date="1565544395027" expanded="true" signature="368:1760" ph="{...}" />
+                <marker date="1565544395027" expanded="true" signature="643:790" ph="{...}" />
+                <marker date="1565544395027" expanded="true" signature="857:1080" ph="{...}" />
+                <marker date="1565544395027" expanded="true" signature="923:1025" ph="{...}" />
+                <marker date="1565544395027" expanded="true" signature="1145:1500" ph="{...}" />
+                <marker date="1565544395027" expanded="true" signature="1295:1490" ph="{...}" />
+                <marker date="1565544395027" expanded="true" signature="1582:1754" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/DataAccess.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <marker date="1565544716715" expanded="false" signature="6:78" ph="..." />
+                <marker date="1565544716715" expanded="true" signature="99:1662" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="129:1660" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="200:462" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="520:681" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="738:1028" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="922:987" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="1089:1280" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="1320:1416" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="1466:1654" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="1506:1565" ph="{...}" />
+                <marker date="1565544716715" expanded="true" signature="1582:1644" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding>
+                <marker date="1565544603462" expanded="true" signature="40:849" ph="&lt;&lt;ContentPage.Content&gt;&#10;        &lt;StackLayout&gt;&#10;            &lt;Entry TextChanged=&quot;TitleChanged&quot; Placeholder=&quot;Title&quot; Text=&quot;{Binding Note.Title, Mode=TwoWay}&quot;&gt;&lt;/Entry&gt;&#10;            &lt;Editor TextChanged=&quot;ContentChanged&quot; Placeholder=&quot;Content&quot; Text=&quot;{Binding Note.Content, Mode=TwoWay}&quot;&gt;&lt;/Editor&gt;&#10;            &lt;Button Text=&quot;Save&quot; Clicked=&quot;Button_OnClicked&quot;&gt;&lt;/Button&gt;&#10;            &lt;Button Text=&quot;Delete&quot;&gt;&lt;/Button&gt;&#10;        &lt;/StackLayout&gt;&#10;    &lt;/ContentPage.Content&gt;.../&gt;" />
+                <marker date="1565544603462" expanded="true" signature="396:834" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Entry TextChanged=&quot;TitleChanged&quot; Placeholder=&quot;Title&quot; Text=&quot;{Binding Note.Title, Mode=TwoWay}&quot;&gt;&lt;/Entry&gt;&#10;            &lt;Editor TextChanged=&quot;ContentChanged&quot; Placeholder=&quot;Content&quot; Text=&quot;{Binding Note.Content, Mode=TwoWay}&quot;&gt;&lt;/Editor&gt;&#10;            &lt;Button Text=&quot;Save&quot; Clicked=&quot;Button_OnClicked&quot;&gt;&lt;/Button&gt;&#10;            &lt;Button Text=&quot;Delete&quot;&gt;&lt;/Button&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
+                <marker date="1565544603462" expanded="true" signature="426:807" ph="&lt;&lt;Entry TextChanged=&quot;TitleChanged&quot; Placeholder=&quot;Title&quot; Text=&quot;{Binding Note.Title, Mode=TwoWay}&quot;&gt;&lt;/Entry&gt; &lt;Editor TextChanged=&quot;ContentChanged&quot; Placeholder=&quot;Content&quot; Text=&quot;{Binding Note.Content, Mode=TwoWay}&quot;&gt;&lt;/Editor&gt; &lt;Button Text=&quot;Save&quot; Clicked=&quot;Button_OnClicked&quot;&gt;&lt;/Button&gt; &lt;Button Text=&quot;Delete&quot;&gt;&lt;/Button&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+              <folding>
+                <marker date="1565544559373" expanded="false" signature="6:163" ph="..." />
+                <marker date="1565544559373" expanded="true" signature="184:1143" ph="{...}" />
+                <marker date="1565544559373" expanded="true" signature="288:1141" ph="{...}" />
+                <marker date="1565544559373" expanded="true" signature="455:737" ph="{...}" />
+                <marker date="1565544559373" expanded="true" signature="811:872" ph="{...}" />
+                <marker date="1565544559373" expanded="true" signature="948:1011" ph="{...}" />
+                <marker date="1565544559373" expanded="true" signature="1070:1135" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <marker date="1565544150616" expanded="true" signature="34:297" ph="{...}" />
+                <marker date="1565544150616" expanded="true" signature="88:295" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MobileApp/MobileApp/DataAccess.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MobileApp/MobileApp/NoteViewModel.cs" />
+        <option value="$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml.cs" />
+        <option value="$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml" />
+        <option value="$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml.cs" />
+        <option value="$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml" />
+        <option value="$PROJECT_DIR$/MobileApp/MobileApp/DataAccess.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="MobileApp.Android/invalid/Android Facet - MobileApp.Android" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MobileApp" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MobileApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MobileApp" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MobileApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MobileApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MainPage.xaml" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MobileApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MobileApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="NoteView.xaml" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="device.picker.selection" value="my_device" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Xamarin.Android.Android Default">
+    <configuration name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MobileApp/MobileApp.Android/MobileApp.Android.csproj" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOS Default" type="XamarinIOSProject" factoryName="Xamarin.iOS">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="DEFAULT_IPHONE_DEVICE" value="" />
+      <option name="DEFAULT_IPHONE_SIMULATOR" value="" />
+      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f875e2bf-04a2-4654-aeec-1e223a6109c4" name="Default Changelist" comment="" />
+      <created>1565526199361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565526199361</updated>
+      <workItem from="1565526203325" duration="885000" />
+      <workItem from="1565531546151" duration="7835000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8720000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.24966353" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.502439" side_tool="true" weight="0.24966353" />
+      <window_info id="Captures" order="5" />
+      <window_info id="Azure Explorer" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32991204" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.398827" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32991204" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="XAML Preview" order="11" />
+      <window_info anchor="bottom" id="Performance Profiler" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="NuGet" order="14" />
+      <window_info anchor="bottom" id="Logcat" order="15" weight="0.32991204" />
+      <window_info anchor="bottom" id="Unit Tests" order="16" />
+      <window_info anchor="bottom" id="Database Changes" order="17" />
+      <window_info anchor="bottom" id="Version Control" order="18" />
+      <window_info anchor="bottom" id="Azure Activity Log" order="19" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Key Promoter X" order="5" />
+      <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1565544150616" expanded="true" signature="34:297" ph="{...}" />
+            <marker date="1565544150616" expanded="true" signature="88:295" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <marker date="1565544401820" expanded="true" signature="40:1182" ph="&lt;&lt;StackLayout&gt;&#10;        &lt;Button Text=&quot;Add mock noteViewModel&quot; &#10;           HorizontalOptions=&quot;Center&quot;&#10;           VerticalOptions=&quot;CenterAndExpand&quot;&#10;           Clicked=&quot;AddMockedNote&quot;/&gt;&#10;        &lt;Button Text=&quot;Get all noteViewModels&quot; &#10;                HorizontalOptions=&quot;Center&quot;&#10;                VerticalOptions=&quot;CenterAndExpand&quot;&#10;                Clicked=&quot;GetAllNotes&quot;/&gt;&#10;        &lt;ListView x:Name=&quot;NotesView&quot;&#10;                  ItemsSource=&quot;{Binding Notes}&quot; ItemSelected=&quot;ItemSelected&quot;&gt;&#10;            &lt;ListView.ItemTemplate&gt;&#10;                &lt;DataTemplate&gt;&#10;                  &lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;&#10;                &lt;/DataTemplate&gt;&#10;            &lt;/ListView.ItemTemplate&gt;&#10;        &lt;/ListView&gt;&#10;    &lt;/StackLayout&gt;.../&gt;" />
+            <marker date="1565544401820" expanded="true" signature="397:1166" ph="&lt;&lt;Button Text=&quot;Add mock noteViewModel&quot; &#10;           HorizontalOptions=&quot;Center&quot;&#10;           VerticalOptions=&quot;CenterAndExpand&quot;&#10;           Clicked=&quot;AddMockedNote&quot;/&gt; &lt;Button Text=&quot;Get all noteViewModels&quot; &#10;                HorizontalOptions=&quot;Center&quot;&#10;                VerticalOptions=&quot;CenterAndExpand&quot;&#10;                Clicked=&quot;GetAllNotes&quot;/&gt; &lt;ListView x:Name=&quot;NotesView&quot;&#10;                  ItemsSource=&quot;{Binding Notes}&quot; ItemSelected=&quot;ItemSelected&quot;&gt;&#10;            &lt;ListView.ItemTemplate&gt;&#10;                &lt;DataTemplate&gt;&#10;                  &lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;&#10;                &lt;/DataTemplate&gt;&#10;            &lt;/ListView.ItemTemplate&gt;&#10;        &lt;/ListView&gt;.../&gt;" />
+            <marker date="1565544401820" expanded="true" signature="419:577" ph="&lt;.../&gt;" />
+            <marker date="1565544401820" expanded="true" signature="586:757" ph="&lt;.../&gt;" />
+            <marker date="1565544401820" expanded="true" signature="766:1147" ph="&lt;&lt;ListView.ItemTemplate&gt;&#10;                &lt;DataTemplate&gt;&#10;                  &lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;&#10;                &lt;/DataTemplate&gt;&#10;            &lt;/ListView.ItemTemplate&gt;.../&gt;" />
+            <marker date="1565544401820" expanded="true" signature="884:1127" ph="&lt;&lt;DataTemplate&gt;&#10;                  &lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;&#10;                &lt;/DataTemplate&gt;.../&gt;" />
+            <marker date="1565544401820" expanded="true" signature="924:1090" ph="&lt;&lt;ViewCell&gt;&#10;                      &lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;&#10;                  &lt;/ViewCell&gt;.../&gt;" />
+            <marker date="1565544401820" expanded="true" signature="957:1058" ph="&lt;&lt;Label Text=&quot;{Binding Title}&quot;&gt;&lt;/Label&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <marker date="1565544603462" expanded="true" signature="40:849" ph="&lt;&lt;ContentPage.Content&gt;&#10;        &lt;StackLayout&gt;&#10;            &lt;Entry TextChanged=&quot;TitleChanged&quot; Placeholder=&quot;Title&quot; Text=&quot;{Binding Note.Title, Mode=TwoWay}&quot;&gt;&lt;/Entry&gt;&#10;            &lt;Editor TextChanged=&quot;ContentChanged&quot; Placeholder=&quot;Content&quot; Text=&quot;{Binding Note.Content, Mode=TwoWay}&quot;&gt;&lt;/Editor&gt;&#10;            &lt;Button Text=&quot;Save&quot; Clicked=&quot;Button_OnClicked&quot;&gt;&lt;/Button&gt;&#10;            &lt;Button Text=&quot;Delete&quot;&gt;&lt;/Button&gt;&#10;        &lt;/StackLayout&gt;&#10;    &lt;/ContentPage.Content&gt;.../&gt;" />
+            <marker date="1565544603462" expanded="true" signature="396:834" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Entry TextChanged=&quot;TitleChanged&quot; Placeholder=&quot;Title&quot; Text=&quot;{Binding Note.Title, Mode=TwoWay}&quot;&gt;&lt;/Entry&gt;&#10;            &lt;Editor TextChanged=&quot;ContentChanged&quot; Placeholder=&quot;Content&quot; Text=&quot;{Binding Note.Content, Mode=TwoWay}&quot;&gt;&lt;/Editor&gt;&#10;            &lt;Button Text=&quot;Save&quot; Clicked=&quot;Button_OnClicked&quot;&gt;&lt;/Button&gt;&#10;            &lt;Button Text=&quot;Delete&quot;&gt;&lt;/Button&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
+            <marker date="1565544603462" expanded="true" signature="426:807" ph="&lt;&lt;Entry TextChanged=&quot;TitleChanged&quot; Placeholder=&quot;Title&quot; Text=&quot;{Binding Note.Title, Mode=TwoWay}&quot;&gt;&lt;/Entry&gt; &lt;Editor TextChanged=&quot;ContentChanged&quot; Placeholder=&quot;Content&quot; Text=&quot;{Binding Note.Content, Mode=TwoWay}&quot;&gt;&lt;/Editor&gt; &lt;Button Text=&quot;Save&quot; Clicked=&quot;Button_OnClicked&quot;&gt;&lt;/Button&gt; &lt;Button Text=&quot;Delete&quot;&gt;&lt;/Button&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/MainPage.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <marker date="1565544395027" expanded="true" signature="6:127" ph="..." />
+            <marker date="1565544395027" expanded="true" signature="148:1762" ph="{...}" />
+            <marker date="1565544395027" expanded="true" signature="155:289" ph="/* Learn more about making custom code visible in the Xamarin.Forms previewer ... */" />
+            <marker date="1565544395027" expanded="true" signature="368:1760" ph="{...}" />
+            <marker date="1565544395027" expanded="true" signature="643:790" ph="{...}" />
+            <marker date="1565544395027" expanded="true" signature="857:1080" ph="{...}" />
+            <marker date="1565544395027" expanded="true" signature="923:1025" ph="{...}" />
+            <marker date="1565544395027" expanded="true" signature="1145:1500" ph="{...}" />
+            <marker date="1565544395027" expanded="true" signature="1295:1490" ph="{...}" />
+            <marker date="1565544395027" expanded="true" signature="1582:1754" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/NoteView.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding>
+            <marker date="1565544559373" expanded="false" signature="6:163" ph="..." />
+            <marker date="1565544559373" expanded="true" signature="184:1143" ph="{...}" />
+            <marker date="1565544559373" expanded="true" signature="288:1141" ph="{...}" />
+            <marker date="1565544559373" expanded="true" signature="455:737" ph="{...}" />
+            <marker date="1565544559373" expanded="true" signature="811:872" ph="{...}" />
+            <marker date="1565544559373" expanded="true" signature="948:1011" ph="{...}" />
+            <marker date="1565544559373" expanded="true" signature="1070:1135" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileApp/MobileApp/DataAccess.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <marker date="1565544716715" expanded="false" signature="6:78" ph="..." />
+            <marker date="1565544716715" expanded="true" signature="99:1662" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="129:1660" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="200:462" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="520:681" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="738:1028" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="922:987" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="1089:1280" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="1320:1416" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="1466:1654" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="1506:1565" ph="{...}" />
+            <marker date="1565544716715" expanded="true" signature="1582:1644" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

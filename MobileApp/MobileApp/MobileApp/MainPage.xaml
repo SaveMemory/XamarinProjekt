@@ -7,19 +7,17 @@
              x:Class="MobileApp.MainPage">
 
     <StackLayout>
-        <Button Text="Add mock note" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand"
-           Clicked="AddMockedNote"/>
-        <Button Text="Get all notes" 
+        <Button Text="Create note" 
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"
-                Clicked="GetAllNotes"/>
+                Clicked="NavigateToNewNote"/>
         <ListView x:Name="NotesView"
-                  ItemsSource="{Binding Notes}">
+                  ItemsSource="{Binding Notes}" ItemSelected="ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Title}" />
+                  <ViewCell>
+                      <Label Text="{Binding Title}"></Label>
+                  </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

@@ -15,21 +15,18 @@ namespace MobileApp
                 Environment.GetFolderPath(Environment.SpecialFolder.Personal),
                 "ormdemo.db3");
             db = new SQLiteConnection(dbPath);
-            db.CreateTable<Note>();
+            db.CreateTable<NoteViewModel>();
         }
 
-        public void AddNote(Note note)
+        public void AddNote(NoteViewModel noteViewModel)
         {
-            var newNote = new Note();
-            newNote.Title = note.Title;
-            newNote.Content = note.Content;
-
-            db.Insert(newNote);
+            db.Insert(noteViewModel);
         }
-        public IEnumerable<Note> GetAllNotes()
+
+        public IEnumerable<NoteViewModel> GetAllNotes()
         {
-            var notesList = new List<Note>();
-            var allNotes = db.Query<Note>("SELECT * FROM Notes");
+            var notesList = new List<NoteViewModel>();
+            var allNotes = db.Query<NoteViewModel>("SELECT * FROM Notes");
 
             foreach (var note in allNotes)
             {
@@ -39,14 +36,26 @@ namespace MobileApp
             return notesList;
         }
 
-        public void UpdateNote(Note note)
+        public void UpdateNote(NoteViewModel noteViewModel)
         {
-            db.Query<Note>($"UPDATE Notes SET Title = {note.Title}, Content = {note.Content} WHERE Id == {note.Id}");
+            db.Update(noteViewModel);
         }
 
         public void DeleteNote(int id)
         {
-            db.Query<Note>($"DELETE FROM Notes WHERE Id == {id}");
+            db.Delete<NoteViewModel>(id);
+        }
+
+        public void SaveNote(NoteViewModel note)
+        {
+            if (note.Id == 0)
+            {
+                AddNote(note);
+            }
+            else
+            {
+                UpdateNote(note);
+            }
         }
     }
 }
